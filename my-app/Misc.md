@@ -1,0 +1,1 @@
+1. Again, no auto re-rendering after walletConnected state changes or I change an account within the wallet. The changes are displayed in UI only after a manual refresh. Should be a fix somewhere in the useEffect.

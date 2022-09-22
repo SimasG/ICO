@@ -363,12 +363,11 @@ const Home: NextPage = () => {
                             <>
                                 <div className="description">
                                     {/* Format Ether helps us in converting a BigNumber to string */}
-                                    You have minted {utils.formatEther(balanceOfCryptoDevTokens)}
-                                    Crypto Dev Tokens
+                                    You have minted {parseInt(utils.formatEther(balanceOfCryptoDevTokens)).toFixed(0)} Crypto Dev Tokens
                                 </div>
                                 <div className="description">
                                     {/* Format Ether helps us in converting a BigNumber to string */}
-                                    Overall {utils.formatEther(tokensMinted)}/10000 have been minted!!!
+                                    Overall {parseInt(utils.formatEther(tokensMinted)).toFixed(0)}/10000 have been minted!!!
                                 </div>
                                 {renderButton()}
                             </>
